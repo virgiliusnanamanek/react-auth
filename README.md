@@ -4,7 +4,15 @@
 
 ### After Login
 
-![Homepage](https://user-images.githubusercontent.com/84966287/188575108-bba6b893-a574-443d-af0d-974d998d2014.png)
+![Home](https://user-images.githubusercontent.com/84966287/189833886-0c4a39aa-9a6e-4162-851d-7b5a8fdb1aa6.png)
+
+### Search Movie
+![Search](https://user-images.githubusercontent.com/84966287/189834066-0fbaf24e-f1a8-4586-a814-4f11bd959fd6.png)
+
+### Results
+
+![Result](https://user-images.githubusercontent.com/84966287/189834174-bc70d9c2-c60c-4aa3-8f51-0848bd530eef.png)
+
 
 ![Now Playing](https://user-images.githubusercontent.com/84966287/188575289-ceda8b50-d32e-425d-a205-1d5f9ff4bada.png)
 
