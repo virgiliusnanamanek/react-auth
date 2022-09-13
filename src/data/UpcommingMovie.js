@@ -17,7 +17,7 @@ function UpcommingMovie() {
 
     useEffect(() => {
         getUpcoming();
-    }, [upcoming]);
+    }, []);
 
     return (
         <section className="text-gray-600 body-font">
