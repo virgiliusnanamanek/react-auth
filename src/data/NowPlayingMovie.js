@@ -21,7 +21,7 @@ function NowPlayingMovie() {
 
     useEffect(() => {
         getNowPlaying();
-    }, [nowPlaying]);
+    }, []);
 
 
     return (
