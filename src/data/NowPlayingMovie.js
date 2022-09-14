@@ -39,7 +39,7 @@ function NowPlayingMovie() {
                                         <img
                                             className="rounded-t-lg"
                                             src={
-                                                movie.backdrop_path ? `${IMAGE_URL}${movie.backdrop_path}` : "https://dummyimage.com/420x260"
+                                                movie.backdrop_path ? `${IMAGE_URL}${movie.backdrop_path}` : "https://images.pexels.com/photos/1870438/pexels-photo-1870438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                                             }
                                             alt=""
                                         />
