@@ -24,9 +24,9 @@ function Navbar() {
 
         <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5">
             <div className="container flex flex-wrap justify-between items-center mx-auto">
-                <a href="#" className="flex items-center">
-                    <img src={Logo} alt="Flowbite" className="w-10 h-10" />
-                </a>
+                <Link to="/" className="flex items-cente">
+                    <img src={Logo} alt="logo" className="w-10 h-10" />
+                </Link>
                 <button
                     data-collapse-toggle="navbar-default"
                     type="button"
