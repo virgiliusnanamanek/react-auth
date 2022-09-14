@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
-import Form from "./components/Form";
+import Login from "./components/Login";
 import { useState, useEffect } from "react";
 import UpcommingMovie from "./data/UpcommingMovie";
 import NowPlayingMovie from "./data/NowPlayingMovie";
@@ -35,7 +35,7 @@ function App() {
     return (
 
       <div className="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
-        <Form setToken={setToken} />
+        <Login setToken={setToken} />
       </div>
 
     )
