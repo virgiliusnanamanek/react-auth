@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { Fragment, useState, } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import DisplaySearchResult from "./DisplaySearchResult";
 
 
@@ -8,9 +8,6 @@ function Home() {
 
   const [search, setSearch] = useState("");
   const [searchResult, setSearchResult] = useState([]);
-
-
-
 
 
   const handleSearch = (e) => {
@@ -29,8 +26,24 @@ function Home() {
   };
 
 
+  // store the search result in a session storage
+
+  useEffect(() => {
+
+    const data = sessionStorage.getItem("searchResult");
+
+    if (data) {
+      setSearchResult(JSON.parse(data));
+    }
+
+  }, []);
 
 
+  useEffect(() => {
+    sessionStorage.setItem("searchResult", JSON.stringify(searchResult));
+  }, [searchResult]);
+
+  
 
 
   return (
@@ -71,20 +84,35 @@ function Home() {
         </div>
       </section>
       <section className="container px-5 py-24 mx-auto">
+
+        <h2 className="text-2xl font-medium text-gray-900 title-font mb-5">
+          Hasil Pencarian 
+        </h2>
+
         <div className="flex flex-wrap -m-4">
           {
+          
             searchResult.length > 0 ? (
-              searchResult.map((item) => {
-                return (
-                  <DisplaySearchResult
-                    key={item.id}
-                    id={item.id}
-                    backdrop_path={item.poster_path}
-                    title={item.title}
-                    overview={item.overview}
+              searchResult.map((movie) => (
+                <DisplaySearchResult
+                key={movie.id}
+                id={movie.id}
+                backdrop_path={movie.backdrop_path}
+                title={movie.title}
+                overview={movie.overview}
+
                   />
-                )
-              })) : null
+              )))  : (
+                searchResult.map((movie) => (
+                  <DisplaySearchResult
+                  key={movie.id}
+                  id={movie.id}
+                  title={movie.title}
+                  backdrop_path={movie.backdrop_path}
+                  overview={movie.overview}
+                  />
+                )))
+
           }
         </div>
       </section>
