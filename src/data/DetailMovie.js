@@ -20,8 +20,9 @@ function DetailMovie() {
     }, []);
 
     return (
-        <section className="text-gray-600 body-font overflow-hidden">
-            <div className="container px-5 py-24 mx-auto">
+        <section className="text-gray-600 body-font pt-14 overflow-hidden">
+            <h1 className="text-3xl font-bold text-center  uppercase">Detail Movie</h1>
+            <div className="container px-5 py-8 mx-auto">
                 <div className="lg:w-4/5 mx-auto flex flex-wrap">
                     <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-3/4 h-64 object-cover object-center rounded"
                         src={movie.poster_path ? `${IMAGE_URL}${movie.poster_path}` : "https://dummyimage.com/420x260"} />
