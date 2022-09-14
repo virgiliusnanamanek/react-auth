@@ -17,7 +17,7 @@ function DisplaySearchResult({ id, title, overview, backdrop_path }) {
                     <img
                         className="object-cover object-center rounded-t-lg h-48 w-full"
                         src={
-                            backdrop_path ? `${IMAGE_URL}${backdrop_path}` : "https://dummyimage.com/420x260"
+                            backdrop_path ? `${IMAGE_URL}${backdrop_path}` : "https://images.pexels.com/photos/1870438/pexels-photo-1870438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                         }
                         alt=""
                     />
