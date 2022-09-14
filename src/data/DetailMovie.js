@@ -25,7 +25,9 @@ function DetailMovie() {
             <div className="container px-5 py-8 mx-auto">
                 <div className="lg:w-4/5 mx-auto flex flex-wrap">
                     <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-3/4 h-64 object-cover object-center rounded"
-                        src={movie.poster_path ? `${IMAGE_URL}${movie.poster_path}` : "https://dummyimage.com/420x260"} />
+                        src={movie.poster_path ? `${IMAGE_URL}${movie.poster_path}` : 
+                        "https://images.pexels.com/photos/1870438/pexels-photo-1870438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"} />
+                        
                     <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                         <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">
                             {movie.title}
