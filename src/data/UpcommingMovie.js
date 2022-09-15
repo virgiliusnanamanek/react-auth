@@ -20,7 +20,7 @@ function UpcommingMovie() {
     }, []);
 
     return (
-        <section className="text-gray-600 body-font pt-14">
+        <section className="text-gray-600 body-font pt-14 ">
             <h1 className="text-3xl font-bold text-center uppercase">Upcoming Movie</h1>
             <div className="container px-5 py-8 mx-auto">
                 <div className="flex flex-wrap -m-4">
@@ -63,4 +63,4 @@ function UpcommingMovie() {
     )
 }
 
-export default UpcommingMovie
+export default UpcommingMovie;
