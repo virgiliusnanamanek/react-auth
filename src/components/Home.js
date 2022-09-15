@@ -9,7 +9,6 @@ function Home() {
   const [search, setSearch] = useState("");
   const [searchResult, setSearchResult] = useState([]);
 
-
   const handleSearch = (e) => {
     e.preventDefault();
     fetch(`https://api.themoviedb.org/3/search/movie?api_key=9be7c49ccd2ba8dafff8d89134ad7992&language=en-US&query=${search}&page=1&include_adult=false`)
@@ -17,16 +16,12 @@ function Home() {
       .then((data) => {
         setSearchResult(data.results);
       });
-  }
-
+  };
 
   const onInputChange = (e) => {
     e.preventDefault();
     setSearch(e.target.value);
   };
-
-
-  // store the search result in a session storage
 
   useEffect(() => {
 
@@ -42,9 +37,6 @@ function Home() {
   useEffect(() => {
     sessionStorage.setItem("searchResult", JSON.stringify(searchResult));
   }, [searchResult]);
-
-  
-
 
   return (
     <Fragment>
